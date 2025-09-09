@@ -6,13 +6,13 @@ Implementation:</br></br>
 
 <b>Groovy .gradle:</b>
 
-Add it in your root build.gradle at the end of repositories:
+Add it in your root settings.gradle.kts at the end of repositories:
 </br>
 
 <pre>allprojects {
   repositories {
     ...
-    maven { url 'https://jitpack.io' }
+    maven { url = uri("https://jitpack.io") }
     }
 }</pre> 
 
@@ -20,7 +20,7 @@ Add it in the your app dependencies:
 </br>
 <pre>dependencies {
   ...
-  implementation 'com.github.theozgurr:NotificationMan:1.0.8'
+  implementation 'com.github.theozgurr:NotificationMan:v1.0.8'
 }</pre>
 </br>
 
@@ -33,7 +33,7 @@ Add it in your root build.gradle.kts at the end of repositories:
 <pre>allprojects {
   repositories {
     ...
-    maven(url = "https://jitpack.io")
+    maven { url = uri("https://jitpack.io") }
     }
 }</pre> 
 
@@ -41,7 +41,7 @@ Add it in the your app dependencies:
 </br>
 <pre>dependencies {
   ...
-  implementation("com.github.theozgurr:NotificationMan:1.0.8")
+  implementation 'com.github.theozgurr:NotificationMan:v1.0.8'
 }</pre>
 </br>
 
